@@ -1,0 +1,116 @@
+.logPage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d7d2cc, #304352)
+}
+.log{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .loginBox{
+   position: relative;
+   z-index: 99999; 
+   /* background-color: white; */
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 5px;
+   padding:2.5rem 5rem 2.5rem  5rem;
+   display: flex;
+   flex-direction: column;
+   gap:0.5rem;
+   background: rgba(122, 134, 141, 0.7)
+ }
+ #logside{
+    position: absolute;
+    top: 0;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+ }
+ .loginput{
+    height: 25px;
+    width: 250px;
+    border: 0.5px solid rgb(74, 73, 73,0.5);
+    border-radius: 5px;
+    outline: none;
+ }
+ #loginbutton{
+    width: 50%;
+    translate: 50% 0px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    /* margin-top: 5px; */
+    margin-bottom: 5px;
+ }
+ #loginforgot{
+    /* translate: 25% 0px; */
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between
+
+ }
+ #loginforgot>a{
+   text-decoration: none;
+   color: black;
+   font-size: smaller;
+ }
+ #loginTitle{
+    translate: 25% 0px;
+    font-size: large;
+    font-weight: bolder;
+ } 
+ #logBike{
+   position: absolute;
+   top: 0;
+   left: 0%;
+   margin-left: 10px;
+   background-image: url(./orderfood.png);
+   width: 150px;
+   height: 150px;
+   background-size: cover;
+   object-fit: cover;
+   /* border-radius: 50%; */
+   /* animation: example 5s linear 2s infinite ; */
+}
+#loginBike{
+   position: absolute;
+   top: -15%;
+   left: 33%;
+   margin-left: 10px;
+   background-image: url(./orderfood.png);
+   background-color: transparent;
+   width: 100px;
+   height: 100px;
+   background-size: cover;
+   object-fit: cover;
+   /* border-radius: 50%; */
+   /* animation: example 5s linear 2s infinite ; */
+}
+/* @keyframes example {
+   0%   {top: 0;left: 0%;}
+   25%  {top: 0;left: 20%;}
+   50%  {top: 0;left: 45%;}
+   75%  {top: 0;left: 65%;}
+   100% {top: 0;left: 85%;}
+ } */
+
+
+  @media (max-width: 578px) {
+    .loginput{
+     width: 200px;
+    }
+    .loginBox{
+        padding: 1.5rem 3rem 1.5rem 3rem;
+    }
+  }
+  @media (min-width: 769px) {
+   
+  }

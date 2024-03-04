@@ -1,0 +1,319 @@
+.Bodycontent{
+    height: 90vh; 
+    width: 100%;
+    /* padding-left: 70px; */
+    /* padding-top: 30px; */
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    flex-wrap:wrap;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Adjust the width as needed */
+    scrollbar-color: transparent rgba(51, 68, 76, 0.1);
+}
+.BodyBox{
+  width:100% ;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  flex-wrap:wrap;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Adjust the width as needed */
+  scrollbar-color: transparent rgba(51, 68, 76, 0.1);
+  
+}
+.BodyBox>.boxContent{
+  height: 100%;
+  width:100% ;
+  padding: 20px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: start;
+  gap: 1rem;
+  flex-wrap:wrap;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Adjust the width as needed */
+  scrollbar-color: transparent rgba(51, 68, 76, 0.1);
+}
+.locationDiv{
+  position: absolute;
+  top: 5.3vh;
+  left: 75px;
+  /* border: 1px solid rgb(72, 69, 69); */
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(156, 155, 155);
+  padding: 3px;
+}
+#location{
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+.dialogdiv{
+  position: absolute;
+  top:0vh ;
+  z-index: 9999999;
+  width:100%;
+  height: 100vh;
+  background-color: rgba(37, 36, 36, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialogbox{
+  position: relative;
+  z-index: 99999999;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: rgb(242, 240, 236);
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+#tablecont{
+  width: 100%;
+  transition: all 0.6 ease-in-out;
+
+
+}
+.qnty{
+  display: flex;
+  justify-content: center;
+  border-radius:10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(71, 71, 71,0.5);
+  gap: 0.5rem;
+  padding-top:1px;
+  padding-bottom:1px;
+  width: 75%;
+  /* padding-left: 20px; */
+}
+.qnty>button{
+  border: none;
+  background-color: white
+}
+.alogbox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+
+.Bodyheadbar{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  padding-inline: 10px;
+  justify-content: space-between;
+  background-color:transparent;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.Bodyheadbar>div{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+
+}
+
+.sitch {
+  position: relative;
+  top: 25%;
+  left: 0px;
+  /* right: 0px; */
+  display: inline-block;
+  width: 60px;
+  height: 23px;
+}
+
+.sitch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slder {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slder:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: rgb(102, 101, 101);
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: small;
+}
+
+
+input:checked + .slder {
+  background-color: #2196F3;
+}
+
+/* input:focus + .slder {
+  box-shadow: 0 0 1px #2196F3;
+} */
+
+input:checked + .slder:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}
+
+/* Rounded sliders */
+.slder.rond {
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+  rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+  rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.slder.rond:before {
+  border-radius: 50%;
+}
+
+
+.Bodyheadbar>div>select{
+  height: 50%;
+  border-radius: 5px;
+  transform: translate(0,50%);
+  padding-inline: 10px;
+}
+
+.cadItem{
+  background-color: white;
+  width:220px ;
+  /* height: 400px; */
+  height: auto;
+  position: relative;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  /* box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
+
+}
+.offerstar{
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(23, 22, 22, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  aspect-ratio: 1;
+  clip-path: polygon(100.00% 50.00%, 78.98% 57.76%, 93.30% 75.00%, 71.21% 71.21%, 75.00% 93.30%, 57.76% 78.98%, 50.00% 100.00%, 42.24% 78.98%, 25.00% 93.30%, 28.79% 71.21%, 6.70% 75.00%, 21.02% 57.76%, 0.00% 50.00%, 21.02% 42.24%, 6.70% 25.00%, 28.79% 28.79%, 25.00% 6.70%, 42.24% 21.02%, 50.00% 0.00%, 57.76% 21.02%, 75.00% 6.70%, 71.21% 28.79%, 93.30% 25.00%, 78.98% 42.24%);
+}
+.cardimage{
+  flex:70;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardimage>img{
+  max-width: 99%; 
+  height: 200px; 
+  object-fit: cover;  
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;    
+}
+.cardTitle{
+    flex: 30;
+    text-align: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px inset;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.cardTitle>p{
+  padding:0;
+  margin:0 ;
+  margin-top: 5px;
+}
+.cardTitle>p:first-child{
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+/* .cardTitle>button{
+  width: 50%;
+  height: 50px;
+  border: none;
+  background-color: rgba(244, 226, 226, 0.3);
+} */
+.bt1{
+  width: 50%;
+  height: 50px;
+  border: none;
+  background-color: rgba(244, 226, 226, 0.3);
+  border-bottom-left-radius: 10px;
+}
+.bt2{
+  width: 50%;
+  height: 50px;
+  border: none;
+  background-color: rgba(244, 226, 226, 0.3);
+  border-bottom-right-radius: 10px;
+
+}
+.bt1:hover{
+  background-color: aliceblue;
+  border: 1px solid rgb(33, 33, 33,0.3);
+  border-bottom-left-radius: 10px;
+}
+.bt2:hover{
+  background-color: rgb(201, 115, 115);
+  border: 1px solid rgb(33, 33, 33,0.3);
+  border-bottom-right-radius: 10px;
+}
+.footer{
+  height: 100px;
+  width: 100%;
+  display: none;
+}
+
+@media only screen and (max-width: 578px){
+  .Body{
+   padding-left: 10px ; 
+   flex-direction: row;
+   justify-content: center;
+  }
+  .cardItem{
+    width:150px ;
+    height: auto;
+  } 
+  img{
+    max-width: 100%; 
+    height: 150px; 
+    object-fit: cover;  
+  }
+}
+    

@@ -1,0 +1,34 @@
+.cart{
+    height:90vh;
+    width: 100%;
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d7d2cc, #304352);
+    margin: 0;
+}
+
+.cartBox{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabtr{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+} 
+.tabtr>th:first-child,.tabtr>td:first-child{
+    padding-left: 10px;
+}
+.tabtr>th{
+    text-transform: uppercase;
+    font-size: large;
+}
+.btnbutton{
+    margin-right: 5px;
+}
+.amtone{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}

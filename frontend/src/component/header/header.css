@@ -1,0 +1,113 @@
+.Header{
+    width: 100%;
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d7d2cc, #304352);
+    box-shadow: rgba(17, 17, 26, 0.4) 0px 1px 0px;
+    display: flex;
+    align-items: center;
+}
+.hdicon{
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-image: url(./chef-logo.jpg);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.hdcontent{
+    flex-grow: 1;
+    display: flex;
+    gap: 1.5rem;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right: 20px;
+}
+.hdcontent>p{
+    font-size:25px;
+}
+.hdP{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.hdP:hover{
+    color: black;
+}
+.baricon{
+    position: absolute;
+    right: 5px;
+    display: none;
+}
+#login{
+    padding: 8px;   
+    /* border: 0.5px  solid rgba(99, 98, 98, 0.5); */
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size:medium;
+    text-decoration: none;
+
+}
+#login:hover{
+    border: 0.5px  solid rgb(140, 117, 117);
+    color: black;
+}
+#loin{
+    padding: 5px 8px 5px 8px;   
+    /* border: 0.5px  solid rgba(99, 98, 98, 0.5); */
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 3px 8px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size:25px;
+    text-decoration: none;
+
+}
+#loin:hover{
+    border: 0.5px  solid rgb(140, 117, 117);
+    color: black;
+}
+p>Link{
+    text-decoration: none;
+    color: black;
+}
+#orderspan{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translate(-25%,-75%);
+    background-color: rgb(135, 3, 3,0.8);
+    font-size: small;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 25%;
+    color: black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 578px){
+   .hdicon{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+   }
+   .hdcontent>p{
+    display: none;
+   /* font-size: 25px; */
+    /* font-weight: 100; */
+ }
+ .baricon{
+    display: block;
+} 
+  }
+
+@media only screen and (max-width: 270px){
+    .hdcontent>p{
+        display: none;
+     
+        /* font-size:medium; */
+         /* font-weight: 100; */
+      }
+  }  
